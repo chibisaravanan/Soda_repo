@@ -27,7 +27,7 @@ def get_soda_data_paginated(datasets):
         if response.status_code == 200:
             data = response.json()
             if 'content' in data:
-                all_datasets.extend(data['content'])
+                all_datasets.extend(data['conten'])
                 # Check if there are more pages
                 if data['last']:
                     break
