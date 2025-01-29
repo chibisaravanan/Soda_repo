@@ -1,0 +1,12 @@
+checks for fact_sales:
+  - schema:
+      name: Any schema changes
+      fail:
+        when schema changes:
+          - column delete
+          - column add
+          - column index change
+          - column type change
+  - row_count > 0:
+      name: Row count should be greater than 0
+ 

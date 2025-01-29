@@ -1,0 +1,15 @@
+soda_cloud:
+  api_key_id: eda0c9f9-9d6c-4481-8872-8515649894e7
+  api_key_secret: PPfeWGeQC0p7YDXgyagf3RmRD4Nd7VkYJ5kWLg_yh-n7XLT4uJjXMQ
+  host: https://reporting.cloud.soda.io
+
+data_source snowflake:
+  type: snowflake
+  connection:
+    user: DATAGOVERNANCE
+    password: Datagovernance@123
+    account: seb80777
+    warehouse: COMPUTE_WH
+    database: SODA_CLOUD_API_DB
+    schema: SODA_CLOUD_API_SCHEMA
+    role: ACCOUNTADMIN
